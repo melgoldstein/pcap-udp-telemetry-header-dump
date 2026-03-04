@@ -1,0 +1,15 @@
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.venv/
+build/
+dist/
+*.egg-info/
+*.exe
+*.dll
+*.so
+*.o
+.env
+.DS_Store
+pcap_dump
+test_filter
