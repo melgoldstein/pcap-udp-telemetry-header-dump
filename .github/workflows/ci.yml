@@ -1,0 +1,13 @@
+name: verification
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        compiler: [gcc, clang]
+    steps:
+      - uses: actions/checkout@v4
+      - run: make CC=${{ matrix.compiler }}
+      - run: |
+          ./pcap_dump sample_capture.pcap
