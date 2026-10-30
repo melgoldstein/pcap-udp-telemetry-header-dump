@@ -7,3 +7,7 @@ clean:
 	rm -f pcap_dump pcap_dump.exe *.o
 .PHONY: all clean
 
+
+test: pcap_dump
+	python3 tests/test_cli.py
+.PHONY: test

@@ -27,6 +27,9 @@ static int port(const char *argument, unsigned *value) {
     return 1;
 }
 int main(int argc, char **argv) {
+    if (argc == 2 && !strcmp(argv[1], "--help")) {
+        puts("usage: pcap_dump capture.pcap [first_port last_port]"); return 0;
+    }
     unsigned lower = 5000, upper = 6000;
     if ((argc != 2 && argc != 4) ||
         (argc == 4 && (!port(argv[2], &lower) || !port(argv[3], &upper))) ||

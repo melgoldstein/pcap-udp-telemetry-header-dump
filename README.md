@@ -1,6 +1,6 @@
 PCAP UDP telemetry header dump
 Inspects classic PCAP Ethernet/IPv4 UDP headers without libpcap.
-Build: make
+Build: make; regression tests: make test (Python 3).
 Run: ./pcap_dump sample_capture.pcap 5000 6000
 Filters either source or destination port, inclusive; defaults 5000-6000.
 Reports timestamps, deltas between matches, captured lengths and ports.
