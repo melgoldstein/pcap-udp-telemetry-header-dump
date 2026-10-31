@@ -7,4 +7,4 @@ Reports timestamps, deltas between matches, captured lengths and ports.
 Handles little/big endian captures with microsecond/nanosecond timestamps.
 Skips fragmented IPv4, VLAN, IPv6 and non-UDP packets; rejects pcapng.
 Accepts payload-truncated captures when all UDP headers are present.
-Bounded 64 KiB packet storage; nonzero status on corrupt input. MIT.
+Bounded 64 KiB packet storage; nonzero status on corrupt input. MIT. [Portfolio: melgoldstein.com](https://melgoldstein.com/)
